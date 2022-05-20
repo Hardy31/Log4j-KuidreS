@@ -17,12 +17,10 @@ public class FileReader implements Reader{
     @Override
     public String read() {
 
-//        Вариант 1 _______________________
-//        Запустить с DOMConfigurator не получилось!
-//        DOMConfigurator.configure("/home/alex/Hardy/Log4j-KuidreS/src/main/resources/log4j.xml");
 
-//        Вариант 2 _______________________
-//        Но получилось запустить с BasicConfigurator.configure();
+//        log4j запускается на базовом конфигутаторе BasicConfigurator.configure();
+//        Все пишит в консоль
+
         BasicConfigurator.configure();
 
         String message = "";
