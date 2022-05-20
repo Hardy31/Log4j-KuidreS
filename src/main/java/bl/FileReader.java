@@ -1,9 +1,6 @@
 package bl;
 
-import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
-import org.apache.log4j.xml.DOMConfigurator;
-
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -17,13 +14,7 @@ public class FileReader implements Reader{
     @Override
     public String read() {
 
-//        Вариант 1 _______________________
-//        Запустить с DOMConfigurator не получилось!
-//        DOMConfigurator.configure("/home/alex/Hardy/Log4j-KuidreS/src/main/resources/log4j.xml");
 
-//        Вариант 2 _______________________
-//        Но получилось запустить с BasicConfigurator.configure();
-        BasicConfigurator.configure();
 
         String message = "";
         try {
@@ -41,7 +32,6 @@ public class FileReader implements Reader{
             logger_log4J.debug( message);
 
         }catch ( URISyntaxException | NullPointerException | IOException  exception ) {
-//            logger_log4J.error(" Ошибка чтения ", exception);
             logger_log4J.error(exception.getMessage() , exception);
         }
 

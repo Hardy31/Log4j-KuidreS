@@ -9,9 +9,7 @@ URL:    https://www.youtube.com/watch?v=VfohjDn9VpI
 В соответствии с файлом
 src/main/resources/log4j.properties
 ЛОГ файл создается здесь:
-log4j.appender.file.File=/home/alex/Hardy/Log4J-KuidreS/target/classes/log4j-KuidreS-App.log
-
-Закончил на 15 минутах 45 секундах!
+log4j.appender.file.File=/home/alex/Hardy/Log4j-KuidreS/src/main/log/log4j-KuidreS.log
 
 
 
