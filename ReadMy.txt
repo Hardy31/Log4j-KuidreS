@@ -7,11 +7,9 @@ URL:    https://www.youtube.com/watch?v=VfohjDn9VpI
 
 Все работает!
 В соответствии с файлом
-src/main/resources/log4j.properties
+src/main/resources/log4j.xml
 ЛОГ файл создается здесь:
-log4j.appender.file.File=/home/alex/Hardy/Log4J-KuidreS/target/classes/log4j-KuidreS-App.log
-
-Закончил на 15 минутах 45 секундах!
+src/main/resources/log/log44.log
 
 
 
